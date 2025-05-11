@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inicio</title>
+   <style>
+      body {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         width: 100%;
+         margin: 0;
+         font-family: Arial, sans-serif;
+         background-color: #ffffff;
+      }
+
+      .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         background-color: #f2f2f2;
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+         max-width: 90%;
+         width: 250px;
+      }
+
+      .Mensaje {
+         margin-top: 20px;
+         text-align: center;
+      }
+
+      .button {
+         padding: 10px 20px;
+         margin-top: 10px;
+         background-color: #007BFF;
+         color: #fff;
+         border: none;
+         border-radius: 5px;
+         width: 100%;
+         cursor: pointer;
+         font-size: 16px;
+      }
+
+      .button:hover {
+         background-color: #0056b3;
+      }
+
+      .input {
+         max-width: 90%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+      }
+
+      .buttonUrl {
+         height: 40px;
+         padding: 0 15px;
+         border: none;
+         background-color: #e61263;
+         color: white;
+         border-radius: 5px;
+         cursor: pointer;
+      }
+
+      #url {
+         margin-top: 10px;
+         height: 40px;
+         font-size: 12px;
+         padding: 0 10px;
+         /* Espaciado interno */
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         width: 100%;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <h1 style="text-align: center;">Bloquador de sitios web</h1>
+
+      <button class="button" id="addAndUnlock">Agregar y Desbloquear</button>
+      <button class="button" id="reset">Resetar Password</button>
+      <button class="button" id="resetAll">Vaciar Todo</button>
+      <button class="button" id="btnBlocknow">Bloquear ahora</button>
+
+      <div class="Mensaje"></div>
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>

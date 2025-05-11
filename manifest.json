@@ -1,0 +1,40 @@
+{
+   "name": "Block Sites",
+   "version": "1.0.0",
+   "manifest_version": 3,
+   "description": "Bloquea sitios web",
+   "author": "Luis",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [
+      {
+         "matches": [
+            "*://*/*"
+         ],
+         "js": [
+            "background.js"
+         ],
+         "run_at": "document_start"
+      }
+   ],
+   "action": {
+      "default_popup": "index.html",
+      "default_title": "Block Sites"
+   },
+   "permissions": [
+      "tabs",
+      "activeTab",
+      "storage",
+      "scripting"
+   ],
+   "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+   ],
+   "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+   }
+}
